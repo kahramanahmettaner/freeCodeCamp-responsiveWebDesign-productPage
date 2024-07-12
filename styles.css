@@ -1,0 +1,248 @@
+/* Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/* css variables */
+
+:root {
+    --light-bg-color: #eee;
+    --dark-bg-color: #ddd;
+    --font-color: #121212;
+    --btn-color: #f1c40f;
+    --btn-hover-color: #cea70a;
+}
+  
+
+/* css reset */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, p {
+    text-align: center;
+}
+
+a {
+    color: var(--font-color);
+    text-decoration: none;    
+}
+
+
+/* styles for page design */
+body {
+    min-height: 100%;
+    padding: 2em;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-bg-color);
+    color: var(--font-color);
+}
+
+#header {
+    background-color: var(--light-bg-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 80px;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 2em;
+    gap: 1rem;
+}
+
+#nav-bar {
+    background-color: var(--light-bg-color);
+    width: 100%;
+}
+
+#nav-bar ul {
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 2em;
+}
+
+#nav-bar ul li {
+    display: inline-block;
+}
+
+
+
+main {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin: 1em 0;
+}
+
+#form input {
+    width: fit-content;
+    padding: .5em;
+}
+
+#form input#submit {
+    font-weight: 900;
+}
+
+.button {   
+    background-color: var(--btn-color);
+    border: none;
+    padding: .5em 1em;
+    border-radius: .4em;
+    cursor: pointer;
+}
+
+.button:hover {  
+    background-color: var(--btn-hover-color);
+}
+
+
+section#features {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+section#features .feature {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+section#features .feature .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+
+section#features .feature .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 80%;
+}
+
+section#features .feature h1, 
+section#features .feature h2, 
+section#features .feature p 
+{
+    text-align: start;
+}
+
+section#what-can-it-produce {
+    width: 100%;
+    text-align: center;
+}
+
+section#pricing {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+section#pricing .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 30%;
+    min-width: 250px;
+    max-width: 300px;
+    height: 100%;
+    background-color: var(--light-bg-color);
+    border: solid #121212 .1em;
+    border-radius: .5em;
+    overflow: hidden;
+}
+
+section#pricing .product .name {
+    width: 100%;
+    padding: .5em;
+    background-color: var(--dark-bg-color);
+    font-weight: 600;
+}
+
+section#pricing .product .price {
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+section#pricing .product .details {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+
+section#pricing .product button {
+    margin: 1em 0 2em 0;
+    font-size: 1.01em;
+    font-weight: 500;
+}
+
+section#pricing .product li {
+    list-style-type: none;
+}
+
+#video {
+    width: 50%;
+    min-width: 300px;
+    height: auto;
+}
+
+@media (max-width: 700px) { 
+
+    #header {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 1em;
+        height: 200px;
+    }
+
+    main {
+        margin-top: 200px;
+    }
+
+    #nav-bar ul {
+        flex-direction: column;
+        gap: .5em;
+    }
+}
