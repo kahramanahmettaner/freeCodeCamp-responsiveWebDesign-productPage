@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>freeCodeCamp Product Landing Page</title>
+</head>
+<body>
+
+    <header id="header">
+
+        <div class="logo-container">
+            <img src="assets/logo.svg" width="50px" alt="FutureAI" id="header-img">
+            <p>FutureAI</p>
+        </div>
+
+        <navbar id="nav-bar">
+            <ul>
+                <li>
+                    <a href="#features" class="nav-link">Features</a>
+                </li>
+                <li>
+                    <a href="#what-can-it-produce" class="nav-link">What Can It Produce</a>
+                </li>
+                <li>
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                </li>
+            </ul>
+        </navbar>
+    </header>
+    
+    <main>
+
+        <section id="hero">
+            <h2>AI For Future - Generate Videos</h2>
+            <form action="https://www.freecodecamp.com/email-submit" id="form" method="post"> 
+                <input type="email" id="email" name="email" placeholder="Enter your email address">
+                <input type="submit" id="submit" value="GET STARTED" class="button">
+            </form>
+        </section>
+
+        <section id="features">
+                <div class="feature">
+                    <div class="icon">
+                        <img src="assets/cheap.svg" width="50px" height="50px" alt="Cheap">
+                    </div>
+                    <div class="text">
+                        <h2>Fair Pricing</h2>
+                        <p>Our memberships are very cheap</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="icon">
+                        <img src="assets/fast.svg" width="50px" height="50px" alt="Fast">
+                    </div>
+                    <div class="text">
+                        <h2>Fast Generation</h2>
+                        <p>You can generate videos very fast</p>
+                    </div>
+                </div>    
+        </section>
+
+        <section id="what-can-it-produce">
+            <div>
+                <!-- width="448" height="252" -->
+                <!-- <iframe id="video"  -->
+                <!-- src="https://cdn.pixabay.com/video/2024/02/26/202004-916894674_large.mp4" frameborder="0" allowfullscreen></iframe> -->
+                <video id="video" controls>
+                    <source src="https://cdn.pixabay.com/video/2024/02/26/202004-916894674_large.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+
+        <section id="pricing">
+            <div class="product">
+                <div class="name">
+                    <p>MEMBER</p>
+                </div>
+                <div class="details">
+                    <p class="price">$5/month</p>
+                    <ul>
+                        <li><p>5 Video per day</p></li>
+                        <li><p>Limited features</p></li>
+                        <li><p>No templates</p></li>
+                    </ul>
+
+                </div>
+                <button class="button">Select</button>
+            </div>
+
+            <div class="product">
+                <div class="name">
+                    <p>PLUS</p>
+                </div>
+                <div class="details">
+                    <p class="price">$10/month</p>
+                    <ul>
+                        <li><p>100 Video per day</p></li>
+                        <li><p>Unlimited features</p></li>
+                        <li><p>5 free templates</p></li>
+                    </ul>
+                    
+                </div>
+                <button class="button">Select</button>
+            </div>
+
+            <div class="product">
+                <div class="name">
+                    <p>PREMIUM</p>
+                </div>
+                <div class="details">
+                    <p class="price">$20/month</p>
+                    <ul>
+                        <ul>
+                            <li><p>Unlimited Videos per day</p></li>
+                            <li><p>Unlimited features</p></li>
+                            <li><p>All templates are free</p></li>
+                        </ul>
+                    </ul>
+
+                </div>
+                <button class="button">Select</button>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
